@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  height: 100px;
+  width: 100%;
+  background-color: rgb(40, 40, 41);
+}
+
+@media screen and (max-width: 1640px) {
+  .header {
+    height: 70px;
+  }
+}
+
+.main__section-1 {
+  margin-top: 100px;
+  width: 100%;
+  height: 1009px;
+  display: flex;
+}
+
+.section-1__content {
+  background-color: rgb(34, 34, 34);
+  width: 1180px; /* Фиксированная ширина для контента */
+  border: 1px solid red;
+  position: relative;
+}
+
+.section-1__img {
+  width: calc(100% - 1180px); /* Оставшееся пространство для изображения */
+  height: 100%;
+  overflow: hidden;
+}
+
+.section-1__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Изображение будет заполнять контейнер без искажений */
+}
+
+.main__head {
+  width: 783px;
+  height: 58px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 163px;
+  padding-top: 30px;
+}
+
+.head__lorem {
+  width: 256px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 36px;
+  display: flex;
+  align-items: center;
+  color: rgb(255, 255, 255);
+}
+
+.head__container-texts {
+  display: flex;
+  align-items: center;
+  gap: 29px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.head__text-1,
+.head__text-2,
+.head__text-3 {
+  font-style: italic;
+  color: rgb(255, 255, 255);
+}
+
+/* Медиазапросы для экранов меньше 1640px */
+@media screen and (max-width: 1640px) {
+  .main__section-1 {
+    margin-top: 70px;
+    height: 1009px;
+  }
+
+  .section-1__content {
+    width: 100%; /* Контент будет занимать всю ширину */
+  }
+
+  .section-1__img {
+    width: 100%; /* Изображение будет занимать всю оставшуюся ширину */
+    height: 50%; /* Уменьшаем высоту изображения */
+  }
+
+  .main__head {
+    width: 100%; /* Заголовок будет занимать всю ширину */
+    padding-top: 20px;
+    margin-left: 0;
+    justify-content: center; /* Центрируем заголовок */
+  }
+
+  .head__lorem {
+    font-size: 28px; /* Уменьшаем размер шрифта для мобильных */
+  }
+
+  .head__container-texts {
+    flex-direction: column; /* Выстраиваем текст вертикально */
+    gap: 15px;
+  }
+
+  .head__text-1,
+  .head__text-2,
+  .head__text-3 {
+    font-size: 18px; /* Уменьшаем размер шрифта */
+  }
+}
+
+/* Медиазапросы для экранов меньше 1024px */
+@media screen and (max-width: 1024px) {
+  .main__section-1 {
+    margin-top: 70px;
+    flex-direction: column; /* Контент и изображение будут расположены вертикально */
+  }
+
+  .section-1__content {
+    width: 100%; /* Контент будет занимать всю ширину */
+    height: 50%; /* Ограничиваем высоту */
+  }
+
+  .section-1__img {
+    width: 100%;
+    height: 50%; /* Ограничиваем высоту изображения */
+  }
+
+  .main__head {
+    text-align: center; /* Центрируем текст */
+    margin-top: 20px;
+  }
+
+  .head__lorem {
+    font-size: 24px; /* Уменьшаем размер шрифта */
+  }
+
+  .head__container-texts {
+    gap: 10px;
+  }
+
+  .head__text-1,
+  .head__text-2,
+  .head__text-3 {
+    font-size: 16px; /* Уменьшаем размер шрифта */
+  }
+}
+
+/* Медиазапросы для экранов меньше 480px */
+@media screen and (max-width: 480px) {
+  .main__section-1 {
+    margin-top: 70px;
+  }
+
+  .main__head {
+    text-align: center; /* Центрируем текст */
+    margin-top: 20px;
+  }
+
+  .head__lorem {
+    font-size: 20px; /* Еще уменьшаем размер шрифта */
+  }
+
+  .head__container-texts {
+    gap: 10px;
+  }
+
+  .head__text-1,
+  .head__text-2,
+  .head__text-3 {
+    font-size: 14px; /* Уменьшаем размер шрифта */
+  }
+}
