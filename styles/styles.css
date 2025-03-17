@@ -27,13 +27,13 @@
 
 .section-1__content {
   background-color: rgb(34, 34, 34);
-  width: 1180px; /* Фиксированная ширина для контента */
+  width: 1180px;
   border: 1px solid red;
   position: relative;
 }
 
 .section-1__img {
-  width: calc(100% - 1180px); /* Оставшееся пространство для изображения */
+  width: calc(100% - 1180px);
   height: 100%;
   overflow: hidden;
 }
@@ -41,7 +41,7 @@
 .section-1__img img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Изображение будет заполнять контейнер без искажений */
+  object-fit: cover;
 }
 
 .main__head {
@@ -76,7 +76,6 @@
   color: rgb(255, 255, 255);
 }
 
-/* Медиазапросы для экранов меньше 1640px */
 @media screen and (max-width: 1640px) {
   .main__section-1 {
     margin-top: 70px;
@@ -84,61 +83,60 @@
   }
 
   .section-1__content {
-    width: 100%; /* Контент будет занимать всю ширину */
+    width: 100%;
   }
 
   .section-1__img {
-    width: 100%; /* Изображение будет занимать всю оставшуюся ширину */
-    height: 50%; /* Уменьшаем высоту изображения */
+    width: 100%;
+    height: 50%;
   }
 
   .main__head {
-    width: 100%; /* Заголовок будет занимать всю ширину */
+    width: 100%;
     padding-top: 20px;
     margin-left: 0;
-    justify-content: center; /* Центрируем заголовок */
+    justify-content: center;
   }
 
   .head__lorem {
-    font-size: 28px; /* Уменьшаем размер шрифта для мобильных */
+    font-size: 28px;
   }
 
   .head__container-texts {
-    flex-direction: column; /* Выстраиваем текст вертикально */
+    flex-direction: column;
     gap: 15px;
   }
 
   .head__text-1,
   .head__text-2,
   .head__text-3 {
-    font-size: 18px; /* Уменьшаем размер шрифта */
+    font-size: 18px;
   }
 }
 
-/* Медиазапросы для экранов меньше 1024px */
 @media screen and (max-width: 1024px) {
   .main__section-1 {
     margin-top: 70px;
-    flex-direction: column; /* Контент и изображение будут расположены вертикально */
+    flex-direction: column;
   }
 
   .section-1__content {
-    width: 100%; /* Контент будет занимать всю ширину */
-    height: 50%; /* Ограничиваем высоту */
+    width: 100%;
+    height: 50%;
   }
 
   .section-1__img {
     width: 100%;
-    height: 50%; /* Ограничиваем высоту изображения */
+    height: 50%;
   }
 
   .main__head {
-    text-align: center; /* Центрируем текст */
+    text-align: center;
     margin-top: 20px;
   }
 
   .head__lorem {
-    font-size: 24px; /* Уменьшаем размер шрифта */
+    font-size: 24px;
   }
 
   .head__container-texts {
@@ -148,23 +146,22 @@
   .head__text-1,
   .head__text-2,
   .head__text-3 {
-    font-size: 16px; /* Уменьшаем размер шрифта */
+    font-size: 16px;
   }
 }
 
-/* Медиазапросы для экранов меньше 480px */
 @media screen and (max-width: 480px) {
   .main__section-1 {
     margin-top: 70px;
   }
 
   .main__head {
-    text-align: center; /* Центрируем текст */
+    text-align: center;
     margin-top: 20px;
   }
 
   .head__lorem {
-    font-size: 20px; /* Еще уменьшаем размер шрифта */
+    font-size: 20px;
   }
 
   .head__container-texts {
@@ -174,6 +171,6 @@
   .head__text-1,
   .head__text-2,
   .head__text-3 {
-    font-size: 14px; /* Уменьшаем размер шрифта */
+    font-size: 14px;
   }
 }
