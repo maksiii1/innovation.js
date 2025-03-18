@@ -27,6 +27,7 @@
 }
 
 .section-1__content {
+  overflow: hidden;
   background-color: rgb(34, 34, 34);
   width: 1180px;
   position: relative;
@@ -76,6 +77,31 @@
   color: rgb(255, 255, 255);
 }
 
+.main__info {
+  width: 784px;
+  height: 777px;
+  margin: 182px 0 0 162px;
+  color: rgb(255, 255, 255);
+}
+
+.info-1 {
+  width: 70%;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 80px;
+  text-align: justify;
+}
+
+.info-1::first-line {
+  font-size: 84.5px;
+}
+
+.info-2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 45px;
+  margin: 60px 0 60px 0;
+  width: 537px;
+}
+
 @media screen and (max-width: 1640px) {
   .main__section-1 {
     margin-top: 70px;
@@ -111,6 +137,10 @@
   .head__text-2,
   .head__text-3 {
     font-size: 18px;
+  }
+
+  .main__info {
+    width: 100%;
   }
 }
 
