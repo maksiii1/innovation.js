@@ -120,7 +120,8 @@
   left: 10px;
 }
 
-.info-container-1 {
+.info-container-1,
+.info-container-2 {
   display: flex;
   align-items: center;
   height: 37px;
@@ -129,7 +130,9 @@
   font-size: 24px;
 }
 
-.container-1__span-sollars {
+.container-1__span-sollars,
+.container-2__span-sollars {
+  margin-top: -6px;
   font-size: 40px;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
